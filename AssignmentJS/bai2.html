@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Assignment - Validate Form</title>
+		<link rel="stylesheet" href="./bai2/assets/app.css" />
+	</head>
+	<body>
+		<div class="list_exersice">
+			<div class="item"><a href="./bai1.html">Bài 1</a></div>
+			<div class="item"><a href="./bai2.html">Bài 2</a></div>
+			<div class="item"><a href="./bai3.html">Bài 3</a></div>
+		</div>
+		<div class="main">
+			<form action="" method="POST" class="form" id="form-1">
+				<h3 class="heading">Đăng ký thành viên</h3>
+				<p class="desc">Bài làm của (Nhật) ❤️</p>
+
+				<div class="spacer"></div>
+
+				<div class="form-group">
+					<!-- Mã SV-->
+					<label for="maSV" class="form-label">Mã sinh viên</label>
+					<input
+						id="maSv"
+						name="maSv"
+						type="maSv"
+						placeholder="Nhập mã sinh viên"
+						class="form-control inputText"
+					/>
+					<span class="form-message"></span>
+				</div>
+
+				<div class="form-group">
+					<!-- Ho ten -->
+					<label for="fullname" class="form-label">Tên đầy đủ</label>
+					<input
+						id="fullname"
+						name="fullname"
+						type="text"
+						placeholder="VD: Đỗ Nhật"
+						class="form-control inputText"
+					/>
+					<span class="form-message"></span>
+				</div>
+
+				<div class="form-group">
+					<!-- EMAIL -->
+					<label for="email" class="form-label">Email</label>
+					<input
+						id="email"
+						name="email"
+						type="email"
+						placeholder="VD: email@domain.com"
+						class="form-control inputText"
+					/>
+					<span class="form-message"></span>
+				</div>
+
+				<div class="form-group row">
+					<!-- CHON GIOI TINH -->
+					<label class="form-label">Giới tính</label>
+					<input
+						name="gioitinh"
+						value="Nam"
+						type="radio"
+					/>
+					<label for="gioitinh">Nam</label>
+					<input
+						name="gioitinh"
+						value="Nữ"
+						type="radio"
+					/>
+					<label for="gioitinh">Nữ</label>
+				</div>
+				<p class="error-message"></p>
+
+				<div class="form-group row lastchild">
+					<!-- CHON SO THICH  -->
+					<label class="form-label">Sở thích</label>
+					<input type="checkbox" name="sothich" id="" value="1" />
+					<label for="sothich">Đọc sách</label>
+					<input type="checkbox" name="sothich" id="" value="2" />
+					<label for="sothich">Du lịch</label>
+					<input type="checkbox" name="sothich" id="" value="3" />
+					<label for="sothich">Âm nhạc</label>
+					<input type="checkbox" name="sothich" id="" value="4" />
+					<label for="sothich">Ẩm thực</label>
+					<input type="checkbox" name="sothich" id="" value="5" />
+					<label for="sothich">Khác</label>
+				</div>
+				<p class="error-message"></p>
+
+				<div class="form-group">
+					<!-- CHON QUOC TICH -->
+					<label for="email" class="form-label">Quốc tịch</label>
+
+					<select name="" id="quoctich" class="form-control">
+						<option value="" hidden>Chọn quốc tịch</option>
+						<option value="Việt Nam">Việt Nam</option>
+						<option value="Mỹ">Mỹ</option>
+					</select>
+					<p class="error-message"></p>
+
+				</div>
+
+				<div class="form-group">
+					<!-- GHI CHU -->
+					<label for="email" class="form-label">Ghi chú</label>
+
+					<textarea
+						name=""
+						id="textarea"
+						cols="30"
+						rows="5"
+						class="form-control"
+					></textarea>
+					<p class="error-message"></p>
+
+				</div>
+
+				<button class="form-submit" id="btnSubmit">Đăng ký</button>
+			</form>
+		</div>
+		<script src="./bai2/assets/main.js"></script>
+	</body>
+</html>

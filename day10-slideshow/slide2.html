@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Slideshow 2</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				max-width: 1000px;
+				margin: 0 auto;
+			}
+			img {
+				max-width: 1000px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="slideshow">
+			<img id="mySlide" />
+			<button onclick="image('next')">&gt;</button>
+			<button onclick="image('start')">start</button>
+			<button onclick="image('stop')">stop</button>
+			<button onclick="image('previous')">&lt;</button>
+		</div>
+		<script src="./slideshow2.js"></script>
+	</body>
+</html>

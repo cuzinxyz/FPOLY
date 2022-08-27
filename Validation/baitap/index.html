@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Validation</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			form {
+				padding-top: 100px;
+				width: 800px;
+				margin: 0 auto;
+			}
+			form p {
+				text-transform: uppercase;
+				font-size: 20px;
+				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
+					Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+					"Helvetica Neue", sans-serif;
+				font-weight: 700;
+				margin-bottom: 20px;
+			}
+			tr td:nth-child(1) {
+				padding: 10px;
+				text-align: right;
+			}
+			tr:last-child {
+				position: relative;
+				top: 10px;
+			}
+			input[type="text"],
+			input[type="number"],
+			input[type="email"],
+			input[type="submit"],
+			input[type="reset"],
+			textarea,
+			select {
+				border: 1px solid rgb(38, 176, 255);
+				padding: 5px 10px;
+				cursor: pointer;
+			}
+			#error {
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="form">
+			<form action="">
+				<table>
+					<tr>
+						<td></td>
+						<td>
+							<p>phiếu đăng ký</p>
+						</td>
+					</tr>
+					<tr>
+						<td>Họ và tên</td>
+						<td>
+							<input class="required" type="text" id="hoten" />(*)
+							<span id="error"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>Địa chỉ:</td>
+						<td>
+							<input type="text" id="inputText" />
+						</td>
+					</tr>
+					<tr>
+						<td>Email:</td>
+						<td>
+							<input class="required" type="text" id="email" />(*)
+							<span id="error"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>Giới tính:</td>
+						<td>
+							<input type="radio" name="gioitinh" /> Nam
+							<input type="radio" name="gioitinh" /> Nữ
+						</td>
+					</tr>
+					<tr>
+						<td>Tuổi:</td>
+						<td>
+							<input type="number" id="tuoi" />(*)
+							<span id="error"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>Sở thích:</td>
+						<td>
+							<input type="checkbox" name="sothich" checked />Thể
+							thao <input type="checkbox" name="sothich" /> Văn
+							học <input type="checkbox" name="sothich" />Công
+							nghệ thông tin
+							<input type="checkbox" name="sothich" />Lịch sử
+							<input type="checkbox" name="sothich" />Game
+						</td>
+					</tr>
+					<tr>
+						<td>Chuyên ngành:</td>
+						<td>
+							<select name="major" id="">
+								<option value="" hidden>
+									Chọn chuyên ngành
+								</option>
+								<option value="congngheweb">
+									Công nghệ web
+								</option>
+								<option value="game">Game</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Yêu cầu:</td>
+						<td>
+							<textarea
+								id="yeucau"
+								cols="30"
+								rows="10"
+								style="resize: none"
+							></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<input
+								type="submit"
+								id="btnSend"
+								value="Gửi thông tin"
+							/>
+							<input
+								type="reset"
+								value="Nhập lại"
+								id="btnReset"
+							/>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+		<script src="./main.js"></script>
+	</body>
+</html>

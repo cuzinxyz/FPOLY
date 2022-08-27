@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Validation Form</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<table>
+			<tr>
+				<td>Họ tên</td>
+				<td>
+					<input type="text" id="hoten" class="inputText" />
+					<span class="error"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Email</td>
+				<td>
+					<input type="email" id="email" class="inputText" />
+					<span class="error"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Số điện thoại</td>
+				<td>
+					<input type="number" id="phone" class="inputText" />
+					<span class="error"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Khóa học</td>
+				<td>
+					<select
+						name="khoaHoc"
+						id="khoahoc"
+						onchange="onChangeKhoaHoc()"
+					>
+						<option value="500" selected>Khóa HTML</option>
+						<option value="800">Khóa JS</option>
+						<option value="1000">Khóa PHP</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Học phí</td>
+				<td>
+					<input type="number" id="hocphi" class="inputText" />
+					<span class="error"></span>
+				</td>
+			</tr>
+			<tr>
+				<td>Hình thức học</td>
+				<td>
+					<input
+						name="hinhthuc"
+						type="radio"
+						value="Offline"
+						class="inputText"
+						checked
+					/>
+					<span class="error"></span>
+					Tại trường
+					<input
+						name="hinhthuc"
+						type="radio"
+						value="Online"
+						class="inputText"
+					/>
+					Học online
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="button" value="Đăng ký" id="btn-regsiter" />
+				</td>
+			</tr>
+		</table>
+		<script src="./hoc.js"></script>
+	</body>
+</html>

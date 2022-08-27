@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 14px;
+	font-weight: 500;
+	font-family: "Roboto", sans-serif;
+}
+
+table {
+	width: 500px;
+	margin: 100px auto;
+	border: 1px solid rgb(215, 214, 214);
+	padding: 30px;
+}
+
+td {
+	padding: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+	width: 100%;
+	padding: 5px 0 5px 10px;
+}
+
+input[type="button"] {
+	border: 1px solid rgb(217, 216, 216);
+	outline: none;
+	color: #fff;
+	padding: 10px 15px;
+	font-weight: 600;
+	border-radius: 3px;
+	background-color: rgb(247, 191, 61);
+	cursor: pointer;
+}

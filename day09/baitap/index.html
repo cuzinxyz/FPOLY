@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			body {
+				max-width: 500px;
+				margin: 0 auto;
+			}
+			input {
+				margin-top: 5px;
+				width: 300px;
+				display: block;
+			}
+			button {
+				margin-top: 5px;
+				margin-bottom: 10px;
+			}
+			.baitap {
+				padding: 50px 0 0 0;
+			}
+			.child {
+				margin-top: 5px;
+				padding: 5px;
+				color: #fff;
+				display: inline-block;
+				background-color: #333;
+			}
+
+			td {
+				padding: 10px;
+				border: 1px solid #333;
+			}
+			#result {
+				padding: 5px;
+				background-color: #333;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="baitap">
+			BAI TAP 1:
+			<input type="number" id="number1" />
+			<input type="number" id="number2" />
+			<button onclick="cong()">Cong</button>
+			<button onclick="tru()">Tru</button>
+			<button onclick="nhan()">Nhan</button>
+			<button onclick="chia()">Chia</button>
+			<br />
+			Ket qua:
+			<div id="result" style="display: inline-block"></div>
+		</div>
+		<br />
+		<br />
+
+		<div class="baitap">
+			BAI TAP 2:
+			<br />
+			Thêm thẻ HTML
+			<input type="text" id="content" />
+			<button onclick="addsp()">Add</button>
+			<div id="btn"></div>
+		</div>
+		<br />
+		<br />
+
+		<div class="baitap">
+			BAI TAP 3
+			<br />
+			<br />
+			<table>
+				<tr>
+					<td>1</td>
+					<td>Tiêu đề thứ nhất</td>
+					<td>
+						<button id="btn-delete" onclick="removeSP()">
+							Delete
+						</button>
+					</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Tiêu đề thứ hai</td>
+					<td>
+						<button id="btn-delete" onclick="removeSP()">
+							Delete
+						</button>
+					</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Tiêu đề thứ ba</td>
+					<td>
+						<button id="btn-delete" onclick="removeSP()">
+							Delete
+						</button>
+					</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Tiêu đề thứ tư</td>
+					<td>
+						<button id="btn-delete" onclick="removeSP()">
+							Delete
+						</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<script src="./app.js"></script>
+	</body>
+</html>

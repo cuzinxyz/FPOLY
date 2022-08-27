@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Assignment - Bán hàng</title>
+		<link rel="stylesheet" href="./bai3/assets/app.css" />
+	</head>
+	<body>
+		<div class="list_exersice">
+			<div class="item"><a href="./bai1.html">Bài 1</a></div>
+			<div class="item"><a href="./bai2.html">Bài 2</a></div>
+			<div class="item"><a href="./bai3.html">Bài 3</a></div>
+		</div>
+		<div class="filter">
+			<select name="" id="filter-select">
+				<option value="" hidden>Lọc giá</option>
+				<option value="all">Tất cả</option>
+				<option value="under100">Dưới 100$</option>
+				<option value="over100">Trên 100$</option>
+			</select>
+		</div>
+		<table id="table">
+			<thead>
+				<tr>
+					<th><input type="checkbox" onclick="toggle(this);" /></th>
+					<th>Hàng hoá</th>
+					<th>Đơn giá</th>
+					<th>Số lượng</th>
+					<th>Thành tiền</th>
+				</tr>
+			</thead>
+			<tbody id="table-body">
+				
+			</tbody>
+			<tr>
+					<td colspan="4" align="right">Tổng</td>
+					<td class="tongTien"></td>
+			</tr>
+		</table>
+
+		<script src="./bai3/assets/main.js"></script>
+	</body>
+</html>

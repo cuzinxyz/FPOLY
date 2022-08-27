@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Assignment - BAI 1</title>
+		<link rel="stylesheet" href="./bai1/assets/app.css" />
+	</head>
+	<body>
+		<div class="list_exersice">
+			<div class="item"><a href="./bai1.html">Bài 1</a></div>
+			<div class="item"><a href="./bai2.html">Bài 2</a></div>
+			<div class="item"><a href="./bai3.html">Bài 3</a></div>
+		</div>
+		<div class="slideshow">
+			<p class="text">Bộ sưu tập ảnh</p>
+			<img alt="Slide Show" id="image" />
+			<div class="btn">
+				<button id="previous" onclick="previous()">
+					<!-- &lt; -->
+					<img src="./bai1/images/arrow-left.svg" alt="">
+				</button>
+				<button id="next" onclick="next()">
+					<img src="./bai1/images/arrow-right.svg" alt="">
+				</button>
+			</div>
+			<p id="position--image"></p>
+		</div>
+
+		<script src="./bai1/assets/bai1.js"></script>
+
+	</body>
+</html>

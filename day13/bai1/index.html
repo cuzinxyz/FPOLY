@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bai 1</title>
+        <style>
+            tr td {
+                padding: 12px 0;
+            }
+        </style>
+	</head>
+	<body>
+		<div class="form">
+			<p class="title">
+                <h1>HÓA ĐƠN</h1>
+            </p>
+			<form action="">
+				<table>
+					<tr>
+						<td>Khách hàng</td>
+						<td>
+							<input
+								type="text"
+								name=""
+								id=""
+								class="inputText"
+							/>
+							<span id="error-message"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>Loại hàng</td>
+						<td>
+							<select
+								name="loaihang"
+								id="loaihang"
+								onchange="onChangeLoaiHang()"
+							>
+								<option value="" hidden selected>
+									Chọn loại hàng
+								</option>
+								<option value="500000">Loại 1</option>
+								<option value="300000">Loại 2</option>
+								<option value="100000">Loại 3</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td>Đơn giá</td>
+						<td>
+							<input
+								type="number"
+								name=""
+								id="donGia"
+								class="inputText"
+							/>
+							<span id="error-message"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>Số lượng</td>
+						<td>
+							<input
+								type="number"
+								name=""
+								id="soLuong"
+								class="inputText"
+								onchange="onChangeThanhTien()"
+							/>
+							<span id="error-message"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>Thành tiền</td>
+						<td>
+							<input
+								type="number"
+								name=""
+								id="thanhTien"
+								class="inputText"
+							/>
+							<span id="error-message"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>Nơi nhận hàng</td>
+						<td>
+							<input
+								type="radio"
+								value="0"
+								name="noinhan"
+								id=""
+								class="inputText"
+								onchange="onChangeNoiNhan()"
+							/>
+							Nội thành
+							<input
+								type="radio"
+								value="30000"
+								name="noinhan"
+								id=""
+								class="inputText"
+								onchange="onChangeNoiNhan()"
+							/>
+							Ngoại thành
+
+							<span id="error-message"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>Phí vận chuyển</td>
+						<td>
+							<input
+								type="number"
+								name=""
+								id="phiVC"
+								class="inputText"
+							/>
+							<span id="error-message"></span>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<input
+								type="submit"
+								value="Đặt mua"
+								id="btnSubmit"
+							/>
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+
+		<script src="./main.js"></script>
+	</body>
+</html>

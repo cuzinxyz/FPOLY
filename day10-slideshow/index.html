@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ôn DOM</title>
+		<style>
+			body {
+				max-width: 1000px;
+				margin: 0 auto;
+				padding: 100px 0;
+			}
+			.bai1,
+			.bai2,
+			.bai3,
+			.bai4 {
+				padding: 20px;
+				border: 1px solid rgb(214, 214, 214);
+				display: block;
+				margin: 10px 0;
+				border-radius: 10px;
+			}
+			img {
+				max-width: 700px;
+				object-fit: cover;
+				border-radius: 20%;
+			}
+			input[type="number"] {
+				padding: 5px;
+				border-radius: 5px;
+				border: 1px solid rgb(206, 205, 205);
+			}
+			form div {
+				margin-top: 10px;
+			}
+			input[type="submit"],
+			button {
+				background-color: #333;
+				color: rgb(248, 248, 248);
+				border: none;
+				outline: none;
+				padding: 5px 15px;
+				border-radius: 5px;
+			}
+			input[type="submit"]:hover,
+			button:hover {
+				background-color: #000;
+			}
+			#red {
+				background-color: red;
+				color: #fff;
+			}
+			#blue {
+				background-color: blue;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bai1">
+			<form action="" id="form">
+				<div>
+					<label>Đơn giá</label>
+					<input type="number" id="dongia" />
+				</div>
+				<br />
+				<div>
+					<label>Số lượng</label>
+					<input type="number" id="soluong" />
+				</div>
+				<br />
+				<div>
+					<label>Thành tiền</label>
+					<input type="number" id="thanhtien" />
+				</div>
+				<br />
+				<input type="submit" value="Submit" id="btn-submit" />
+			</form>
+		</div>
+
+		<div class="bai2">
+			<button onclick="img(1)">Img1</button>
+			<button onclick="img(2)">Img2</button>
+			<button onclick="img(3)">Img3</button>
+			<br />
+			<p>Result</p>
+			<div class="result-img"></div>
+		</div>
+
+		<div class="bai3">
+			<p id="text-bai3">Ahihi do ngoc</p>
+			<br />
+			<button id="red">Red</button>
+			<button id="blue">Blue</button>
+		</div>
+
+		<div class="bai4">
+			<img
+				src="./images/photo-1653866114444-4c8f42f0b60d.avif"
+				name="img_pet"
+				onmouseover="onMouseOverEvent()"
+				onmouseout="onMouseOutEvent()"
+				id="myImg"
+			/>
+		</div>
+		<script src="./app.js"></script>
+	</body>
+</html>
